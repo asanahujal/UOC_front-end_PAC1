@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <title>El meu porfoli</title>
+  <meta name="description" content="El meu porfoli">
+  <meta name="author" content="Albert Sanahuja Llopis">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="HTML, CSS, JavaScript, UOC, Albert Sanahuja Llopis">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="menu">
+		<img src="css/img/logo-html5.png" alt="Logo" class="logo">
+    <div>
+      <a href="./index.html">Home</a>
+      <a href="./cv.html">Currículum Vitae</a>
+      <a href="./contact.html">Contacte</a>
+    </div>
+	</div>
+  <header>
+    <h1>Formulari de contacte</h1>
+  </header>
+  <section>
+    <form action="" method="post">
+      <div>
+        <label for="name">Nom:</label>
+        <input type="text" name="name" id="name" required><br>
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required><br>
+      </div>
+      <div>
+        <label for="message">Missatge:</label>
+        <textarea name="message" id="message" required></textarea><br>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+  <footer>
+    <h4>UOC - Front end - PAC 1</h4>
+    <div>
+      <a href="https://www.linkedin.com/in/albertsanahuja/" target="_blank"><img class="image-container linkedin_img" src="css/img/logo_linkedin.png" alt="LinkedIn"></a>
+      <a href="https://twitter.com/a_sanahuja" target="_blank"><img class="image-container twitter_img" src="css/img/logo_twitter.png" alt="Twitter"></a>
+    </div>
+    <h4>Albert Sanahuja Llopis</h4>
+  </footer>
+  <script>
+      const form = document.getElementById('contact-form');
+      const submitBtn = document.getElementById('submit-btn');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        const data = {
+          name: name,
+          email: email,
+          message: message
+        };
+
+        alert(`S'ha simulat enviar el següent missatge:
+        ${JSON.stringify(data, null, 2)}`);
+
+        form.reset();
+      });
+  </script>
+</body>
+</html>

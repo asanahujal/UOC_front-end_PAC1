@@ -1,0 +1,128 @@
+/* Generic CSS */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+}
+
+.logo {
+  float: left;
+  height: 50px;
+  margin: 15px;
+}
+
+.menu a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+header {
+  background-color: #aaaaaa;
+  color: black;
+  height: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-container {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background-color: #aaaaaa;
+}
+.image-container:hover {
+  background-color: #ffffff;
+}
+
+section {
+  background-color: #ffffff;
+  color: black;
+  height: 73vh;
+  display: flex;
+  overflow-y: scroll !important;
+}
+
+/* Contact CSS */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+form div {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+form div label {
+  width: 30%;
+  font-weight: bold;
+}
+
+form div input, textarea {
+  width: 70%;
+  height: 30px;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+form input[type="submit"] {
+  width: 30%;
+  height: 40px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #ccc;
+  color: black;
+  cursor: pointer;
+}
